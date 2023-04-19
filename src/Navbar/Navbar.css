@@ -1,42 +1,114 @@
 .navbar {
+  background-color: #fff; /* Set your desired background color */
+  height: 80px; /* Set your desired height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  padding: 0 20px;
+  height: 80px; /* Set your desired height */
+  max-width: 1100px; /* Set your desired maximum width */
+  width: 100%;
+  padding: 0 24px;
 }
 
-.navbar-logo img {
-  height: 40px;
-}
-
-.navbar-menu {
+.navbar-logo {
+  color: #000; /* Set your desired color */
+  justify-self: flex-start;
+  cursor: pointer;
   display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+}
+
+
+.nav-menu {
+  display: flex;
+  align-items: center;
   list-style: none;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.navbar-menu li {
-  margin: 0 10px;
+.nav-item {
+  height: 80px; /* Set your desired height */
 }
 
-.navbar-menu a {
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.navbar-right {
+.nav-links {
+  color: #000; /* Set your desired color */
   display: flex;
   align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 }
 
-.navbar-button {
-  background-color: black;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 30px;
+.nav-links:hover {
+  color: #333; /* Set your desired hover color */
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh; /* Set your desired height */
+    position: absolute;
+    top: 79px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: #fff; /* Set your desired background color */
+  }
+
+  .nav-menu.active {
+    background-color: #fff; /* Set your desired background color */
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-item {
+    height: 60px;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 961px) {
+  .menu-text {
+    display: none;
+  }
 }
