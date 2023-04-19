@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar/Navbar';
+import TopSection from './TopSection/TopSection';
 
 function App() {
   return (
     <div>
-      <p>Hello</p>
+      <Navbar />
+      <TopSection />
     </div>
   );
 }
