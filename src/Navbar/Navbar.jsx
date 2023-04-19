@@ -16,17 +16,17 @@ function Navbar() {
           <a href="/">Our Mission</a>
         </li>
         <li>
-          <a href="/about">Affiliated Apps</a>
+          <a href="/apps">Affiliated Apps</a>
         </li>
         <li>
           <a href="/blog">Blog</a>
         </li>
         <li>
-          <a href="/contact">Recent Donations</a>
+          <a href="/donations">Recent Donations</a>
         </li>
       </ul>
       <div className="navbar-right">
-        <a href="/" className="navbar-button">
+        <a href="/app/dao" className="navbar-button">
           Enter Governance
         </a>
       </div>
