@@ -6,7 +6,7 @@ function Mission() {
         <div>
             <Navbar />
             <h1 className="mission_heading">Our Whitepaper</h1>
-            <iframe src="http://localhost:3000/assets/whitepaper/v1/whitepaper.html" className="whitepaper_html" />
+            <a className="mission_whitepaper"href="https://github.com/Blockcharity/whitepaper">View Whitepaper</a>
         </div>
     )
 }
