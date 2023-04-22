@@ -4,8 +4,10 @@
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    margin-top: 80px;
     background: none;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    
   }
   
   .top-section-heading {
