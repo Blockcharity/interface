@@ -1,10 +1,12 @@
 import React from "react";
 import "./TopSection.css";
 import { Link } from "react-router-dom";
+import Background from "../Background/Background";
 
 function TopSection() {
   return (
     <div className="top-section">
+      <Background />
       <h1 className="top-section-heading">
         We can make a difference. Together.
       </h1>

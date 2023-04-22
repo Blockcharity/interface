@@ -5,7 +5,7 @@
     align-items: center;
     min-height: 75vh;
     margin-top: 80px;
-    background-color: white;
+    background: none;
   }
   
   .top-section-heading {
@@ -34,6 +34,7 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   .top-section-button:hover {
     background-color: #2d2d2d;

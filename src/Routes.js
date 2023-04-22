@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import VoteInterface from "./Main/Governance/voting";
 import Dashboard from "./Main/Governance/dashboard";
 import Mission from "./Main/Mission/Mission";
-const _Routes = () => {
+const Routes_ = () => {
     return (
         <div>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -19,4 +19,4 @@ const _Routes = () => {
         </div>
     )
 }
-export default _Routes;
+export default Routes_;
