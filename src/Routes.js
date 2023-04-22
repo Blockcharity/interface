@@ -1,7 +1,7 @@
 import App from "./Main/LandingPage/LandingPage";
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Dashboard from "./Main/Governance/Dashboard";
+import Dashboard from "./Main/Governance/Dashboard.jsx";
 import Mission from "./Main/Mission/Mission";
 const Routes_ = () => {
     return (
