@@ -11,7 +11,6 @@ const Routes_ = () => {
                 <Routes>
                     <Route path="/" element={<App />} />
                     <Route path="/mission" element={<Mission />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="*" element={<pre><p>   ERROR 404 NOT FOUND - Sorry, this link is invalid or we didn't finish developing this page.</p></pre>} />
                 </Routes>
             </BrowserRouter>
