@@ -1,0 +1,129 @@
+.vote-form {
+  max-width: 600px;
+  padding: 20px;
+  /*border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.vote-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.org-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.org-name {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.org-radio {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-right: 10px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.org-radio:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #007bff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.org-radio:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.org-radio:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.vote-amount {
+  margin-bottom: 20px;
+}
+
+.vote-amount label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vote-amount input {
+  display: block;
+  width: 95%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.vote-amount input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+  border-color: #007bff;
+}
+
+.vote-button {
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.vote-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.vote-button:hover {
+  background-color: #0062cc;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 20px;
+}
+
+.transaction-hash {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.transaction-link {
+  color: #007bff;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+.transaction-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}

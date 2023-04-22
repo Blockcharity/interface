@@ -18,7 +18,7 @@ function Navbar() {
         <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link
-              to="/l"
+              to="/mission"
               className="nav-links"
               onClick={() => setMenuOpen(false)}
             >
@@ -27,7 +27,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="/about"
+              to="/apps"
               className="nav-links"
               onClick={() => setMenuOpen(false)}
             >
@@ -36,7 +36,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="/projects"
+              to="/blog"
               className="nav-links"
               onClick={() => setMenuOpen(false)}
             >
@@ -45,11 +45,11 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="/contact"
+              to="/charities"
               className="nav-links"
               onClick={() => setMenuOpen(false)}
             >
-              Recent Donations
+              Charity Resources
             </Link>
           </li>
         </ul>

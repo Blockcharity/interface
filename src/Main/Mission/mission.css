@@ -1,0 +1,12 @@
+.whitepaper_html {
+    width: calc(100% - 100px);
+    margin: 50px;
+    height: 100vh;
+    border-radius: 10px;
+}
+body, html {
+    height: 100%;
+}
+.mission_heading {
+    margin: 50px;
+}

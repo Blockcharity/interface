@@ -1,0 +1,32 @@
+.lower-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .org-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .org-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .org-name {
+    margin-top: 0;
+  }
+  
+  .donation-amount {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  
