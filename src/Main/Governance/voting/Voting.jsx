@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
-import Blockcharity from '../../Contracts/Blockcharity';
-import contractAddress from '../../Contracts/contractAddress';
-import "./Voting.css"
+import Blockcharity from '../../../Contracts/Blockcharity';
+import contractAddress from '../../../Contracts/contractAddress';
+import "./voting.css"
 
 const VoteInterface = () => {
   const [organizations, setOrganizations] = useState([]);

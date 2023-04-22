@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Blockcharity from '../../Contracts/Blockcharity';
-import "./lowersection.css"
+import Blockcharity from '../../../Contracts/Blockcharity';
+import "./organizations.css"
 
 function LowerSection() {
   const [orgData, setOrgData] = useState([]);

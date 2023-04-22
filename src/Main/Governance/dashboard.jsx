@@ -1,5 +1,5 @@
-import VoteInterface from "./voting";
-import LowerSection from "./organizations";
+import VoteInterface from "./voting/Voting";
+import LowerSection from "./organizations/Organizations";
 import Navbar from "../Navbar/Navbar";
 
 function Dashboard() {

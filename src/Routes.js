@@ -1,8 +1,7 @@
 import App from "./Main/LandingPage/LandingPage";
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import VoteInterface from "./Main/Governance/voting";
-import Dashboard from "./Main/Governance/dashboard";
+import Dashboard from "./Main/Governance/Dashboard";
 import Mission from "./Main/Mission/Mission";
 const Routes_ = () => {
     return (
