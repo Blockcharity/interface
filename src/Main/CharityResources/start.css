@@ -1,0 +1,78 @@
+.multi-step-page {
+    font-family: sans-serif;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .step-counter {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .step-content > div {
+    display: none;
+  }
+  
+  .step-content > div:first-of-type {
+    display: block;
+  }
+  
+  .step-content > div > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    }
+    
+    .step-content > div > p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    }
+    
+    .step-content > div > button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    }
+    
+    .step-content > div > button:hover {
+    background-color: #0069d9;
+    }
+    
+    .step-content > div > button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    }
+    
+    .step-content > div > button:last-of-type {
+    background-color: #28a745;
+    }
+    
+    .step-content > div:last-of-type > button:last-of-type {
+    background-color: #007bff;
+    }
+    
+    @media (max-width: 768px) {
+    .step-content > div > button {
+    margin-right: 0;
+    margin-top: 1rem;
+    }
+    }  
