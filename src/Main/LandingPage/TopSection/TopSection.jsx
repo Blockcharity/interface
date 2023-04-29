@@ -44,7 +44,7 @@ function TopSection() {
         Blockcharity is a transparent protocol that collects donations direct and through many projects in blockchain and allocates them to those less fortunate using a classic DAO model.
       </p>
       <Link
-        to="/dashboard"
+        to="/app/dashboard"
         className="top-section-button"
       >
         Get Started

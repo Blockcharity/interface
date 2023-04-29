@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./Navbar.css";
 
-const categories = [{"name":"Our Mission","sections":[{"name":"About Us","directory":"/about"},{"name":"Whitepaper","directory":"/mission"},{"name":"Team","directory":"/team"}]},{"name":"Affiliated Apps","sections":[{"name":"All Apps","directory":"/apps"},{"name":"Integration","directory":"/docs"},{"name":"Add Your App","directory":"/appresources"}]},{"name":"Blog","sections":[{"name":"Latest Posts","directory":"/posts"},{"name":"Highlights","directory":"/highlights"}]},{"name":"Charity Resources","sections":[{"name":"Donate","directory":"/donate"},{"name":"Volunteer","directory":"/volunteer"},{"name":"Add Your Charity","directory":"/Add-Your-Charity"}]}]
+const categories = [{"name":"Organizations","sections":[{"name":"View All","directory":"/organizations"},{"name":"Statistics","directory":"/organizations/stats"},{"name":"Verfication","directory":"/submissions"}]},{"name":"Vote","sections":[{"name":"Grants","directory":"/grants"},{"name":"Statistics","directory":"/grants/stats"},{"name":"Weekly Votes","directory":"/weekly"}]},{"name":"For Charities","sections":[{"name":"Create Post","directory":"/post"},{"name":"Edit Profile","directory":"/edit"}]}]
 
-function Navbar() {
+function NavbarApp() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuHover = (index) => {
@@ -38,7 +38,7 @@ function Navbar() {
                   {category.sections.map((section, index) => (
                     <Link
                       key={index}
-                      to={section.directory}
+                      to={"/app" + section.directory}
                       className="dropdown-link"
                     >
                       {section.name}
@@ -66,7 +66,7 @@ function Navbar() {
               <div className="nav-links">{category.name}</div>
               <div className="dropdown-menu">
                 {category.sections.map((section, index) => (
-                  <Link to={section.directory} className="dropdown-link" key={index}>{section.name}</Link>
+                  <Link to={"/app" + section.directory} className="dropdown-link" key={index}>{section.name}</Link>
                 ))}
               </div>
             </li>
@@ -77,4 +77,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarApp;

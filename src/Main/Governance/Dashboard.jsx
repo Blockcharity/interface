@@ -1,16 +1,16 @@
 import React from "react";
 import VoteInterface from "./voting/Voting";
 import LowerSection from "./organizations/Organizations";
-import Navbar from "../Navbar/Navbar";
+import NavbarApp from "../Navbar/NavbarApp";
 
-function Dash() {
+function Dashboard() {
     return(
         <div>
-        <Navbar />
+        <NavbarApp />
         <VoteInterface />
         <LowerSection />
         </div>
     )
 }
 
-export default Dash;
+export default Dashboard;

@@ -12,9 +12,10 @@ const Routes_ = () => {
                 <Routes>
                     <Route path="/" element={<App />} />
                     <Route path="/mission" element={<Mission />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/app/dashboard" element={<Dashboard />} />
                     <Route path="/charities" element={<CharityResources />} />
                     <Route path="*" element={<pre><p><meta http-equiv="refresh" content="0; URL=/" /></p></pre>} />
+                    <Route path="/app/*" element={<pre><p><meta http-equiv="refresh" content="0; URL=/app/dashboard" /></p></pre>} />
                 </Routes>
             </BrowserRouter>
         </div>
